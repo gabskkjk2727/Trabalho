@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combustíveis Fósseis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 900px;
+            background: white;
+            padding: 30px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards, slideIn 1.5s ease-out forwards;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #333;
+            text-align: center;
+            opacity: 0;
+            animation: popIn 2s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #333;
+            opacity: 0;
+            animation: fadeInText 1.5s ease-out forwards;
+            animation-delay: 2s;
+        }
+
+        p {
+            opacity: 0;
+            animation: fadeInText 2.5s ease-out forwards;
+            animation-delay: 2.5s;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        p strong {
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-weight: bold;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>COMBUSTÍVEIS FÓSSEIS</h1>
+
+        <!-- Isaque -->
+        <div class="section">
+            <h2 class="name">Isaque</h2>
+            <p>OS COMBUSTÍVEIS FÓSSEIS SÃO SUBSTÂNCIAS ORGÂNICAS FORMADAS HÁ MILHÕES DE ANOS, POR CONTA DA DECOMPOSIÇÃO DE ANIMAIS. TENDO EM SUA COMPOSIÇÃO, CABORNO E HIDROGÊNIO. SÃO FONTES DE ENERGIA NÃO RENOVÁVEIS.</p>
+        </div>
+
+        <!-- Alex -->
+        <div class="section">
+            <h2 class="name">Alex</h2>
+            <p><strong>PRINCIPAIS TIPOS:</strong></p>
+            <p><strong>PETRÓLEO:</strong> Inflamoso, oleoso, e viscoso. É um recurso natural e não renovável. Extraído por meio da perfuração de poços. Um exemplo de empresa que extrai esse óleo é a Petrobras.</p>
+            <p><strong>Carvão:</strong> Um sólido inflamável que é formado a partir da decomposição da matéria orgânica vegetal.</p>
+            <p><strong>Gás natural:</strong> Formado a partir da decomposição de matéria orgânica marinha.</p>
+        </div>
+
+        <!-- Gabriel -->
+        <div class="section">
+            <h2 class="name">Gabriel</h2>
+            <p><strong>IMPACTOS</strong></p>
+            <p>Toda ação tem uma consequência e essa não poderia ser diferente. O uso dessa fonte de energia trás impactos sérios ao clima, poluição o ar, e a água. Um exemplo: o efeito estufa, que é provocado por conta da emissão de gases poluentes (metano ou também conhecido como CH4. É um exemplo de um desses gases).</p>
+        </div>
+
+        <!-- Ana Clara -->
+        <div class="section">
+            <h2 class="name">Ana Clara</h2>
+            <p><strong>Agora, como eu posso evitar o uso de combustíveis fósseis?</strong></p>
+            <p>Use Energia Solar e Eólica que são renováveis e não poluem o ar. Veículos elétricos também é uma maneira de evitar o uso desse combustível prejudicial, pois não usa a gasolina como fonte de energia.</p>
+        </div>
+
+        <!-- Rodrigo -->
+        <div class="section">
+            <h2 class="name">Rodrigo</h2>
+            <p>A adoção de alternativas sustentáveis, como energia solar, eólica e veículos elétricos, é fundamental para a preservação ambiental e para garantir um futuro mais sustentável para o planeta.</p>
+        </div>
+    </div>
+</body>
+</html>
